@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="membership.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <title>Raven Gaming Website</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <a href="index.html" class="nav__logo">
+            <img src="image/logo.png" class="logo-image" alt="Raven Gaming Logo">
+        </a>
+        <nav class="nav container">
+            <div class="nav__data">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+            
+            <!--=============== NAV MENU ===============-->
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Features <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="hardware.html" class="dropdown__link">
+                                    <i class="ri-gamepad-line"></i> Hardware
+                                </a>                          
+                            </li>
+
+                            <li>
+                                <a href="food menu.html" class="dropdown__link">
+                                    <i class="ri-restaurant-2-line"></i> Food Menu
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="game library.html" class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Game Library
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Pricings <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="pricing.html" class="dropdown__link">
+                                    <i class="ri-money-rupee-circle-line"></i> Regular
+                                </a>                          
+                            </li>
+
+                            <li>
+                                <a href="membership.html" class="dropdown__link">
+                                    <i class="ri-vip-crown-line"></i> Membership
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+                  
+                    <!--=============== DROPDOWN 4 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Reviews <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="blog.html" class="dropdown__link">
+                                    <i class="ri-draft-line"></i> Blog
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="review.html" class="dropdown__link">
+                                    <i class="ri-speak-line"></i> Review
+                                </a>                          
+                            </li>
+                        </ul>
+                    </li>
+                  
+                    <li><a href="index.php" class="nav__link">LogOut</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 style="color: #fff64f; font-size: 2.5em;">Membership Plans</h1>
+        <p  style="color: #fff; font-size: 1.7em;">Choose the best plan that fits your gaming needs. At Raven Gaming, we offer a range of membership plans to enhance your gaming experience and connect with like-minded players. Whether you're a casual gamer or a competitive enthusiast, we have a plan tailored just for you.</p>
+    </div>
+
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3 text-bg-warning border-warning">
+                <h4 class="my-0 fw-normal">Basic Membership</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">₹299</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Our Basic Membership plan provides access to essential features, including forum participation, event notifications, and community updates. Join the clan and be part of our growing gaming community.</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-warning">BUY</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3 text-bg-warning border-warning">
+                <h4 class="my-0 fw-normal">Premium Membership</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">₹499</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Upgrade to our Premium Membership for an enhanced gaming experience. Enjoy additional perks such as exclusive in-game content, priority access to events, and personalized support from our team.</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-warning">BUY</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-warning border-warning">
+                <h4 class="my-0 fw-normal">Pro Membership</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">₹799</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>For the ultimate gaming experience, choose our Pro Membership. Access advanced features, participate in high-stakes tournaments, and connect with top-tier players in the clan. Elevate your gaming journey with Pro Membership.</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-warning">BUY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <p>Join Raven Gaming today and unlock a world of gaming possibilities. Select your preferred plan and become part of a vibrant gaming community that shares your passion for excellence.</p>
+      </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61554651464736" target="_blank"><img src= "image/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/raven_gaming_2023/" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@RavenGamingCafe" target="_blank"><img src="image/youtube.png" alt="YouTube"></a>
+        </div>
+        <p>&copy; 2023 Raven Gaming</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('pcButton').addEventListener('click', function() {
+            window.location.href = "index.html";
+        });
+    
+        document.getElementById('consoleButton').addEventListener('click', function() {
+            window.location.href = 'console-get-started-page.html';
+        });
+
+        document.getElementById('consoleButton').addEventListener('click', function() {
+            window.location.href = 'console-get-started-page.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!--=============== CSS ===============-->
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  
+        .b-example-divider {
+          width: 100%;
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+  
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+  
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+  
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+  
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+  
+        .btn-bd-primary {
+          --bd-violet-bg: #712cf9;
+          --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  
+          --bs-btn-font-weight: 600;
+          --bs-btn-color: var(--bs-white);
+          --bs-btn-bg: var(--bd-violet-bg);
+          --bs-btn-border-color: var(--bd-violet-bg);
+          --bs-btn-hover-color: var(--bs-white);
+          --bs-btn-hover-bg: #6528e0;
+          --bs-btn-hover-border-color: #6528e0;
+          --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+          --bs-btn-active-color: var(--bs-btn-hover-color);
+          --bs-btn-active-bg: #5a23c8;
+          --bs-btn-active-border-color: #5a23c8;
+        }
+  
+        .bd-mode-toggle {
+          z-index: 1500;
+        }
+  
+        .bd-mode-toggle .dropdown-menu .active .bi {
+          display: block !important;
+        }
+      </style>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="hardware.css">
+    <link rel="stylesheet" href="features.css">
+
+    <title>Raven Gaming Website</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <a href="index.html" class="nav__logo">
+            <img src="image/logo.png" class="logo-image" alt="Raven Gaming Logo">
+        </a>
+        <nav class="nav container">
+            <div class="nav__data">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+            
+            <!--=============== NAV MENU ===============-->
+
+            <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link">Home</a></li>
+
+                  <li><a href="about.html" class="nav__link">About</a></li>
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                      <div class="nav__link">
+                          Features <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                      </div>
+
+                      <ul class="dropdown__menu">
+                          <li>
+                              <a href="hardware.html" class="dropdown__link">
+                                  <i class="ri-gamepad-line"></i> Hardware
+                              </a>                          
+                          </li>
+
+                          <li>
+                              <a href="food menu.html" class="dropdown__link">
+                                  <i class="ri-restaurant-2-line"></i> Food Menu
+                              </a>
+                          </li>
+
+                          <li>
+                              <a href="game library.html" class="dropdown__link">
+                                  <i class="ri-bar-chart-line"></i> Game Library
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <li class="dropdown__item">
+                      <div class="nav__link">
+                          Pricings <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                      </div>
+
+                      <ul class="dropdown__menu">
+                          <li>
+                              <a href="pricing.html" class="dropdown__link">
+                                  <i class="ri-money-rupee-circle-line"></i> Regular
+                              </a>                          
+                          </li>
+
+                          <li>
+                              <a href="membership.html" class="dropdown__link">
+                                  <i class="ri-vip-crown-line"></i> Membership
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+
+
+                  <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+                
+                  <!--=============== DROPDOWN 4 ===============-->
+                  <li class="dropdown__item">
+                      <div class="nav__link">
+                          Reviews <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                      </div>
+
+                      <ul class="dropdown__menu">
+                          <li>
+                              <a href="blog.html" class="dropdown__link">
+                                  <i class="ri-draft-line"></i> Blog
+                              </a>
+                          </li>
+
+                          <li>
+                              <a href="review.html" class="dropdown__link">
+                                  <i class="ri-speak-line"></i> Review
+                              </a>                          
+                          </li>
+                      </ul>
+                  </li>
+                
+                  <li><a href="index.php" class="nav__link">LogOut</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="cpu" viewBox="0 0 16 16">
+            <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z" fill="yellow"/>
+          </symbol>
+    
+          <symbol id="vr" viewBox="0 0 16 16">
+            <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+            <path d="M4.508 11h1.429l1.99-5.999H6.61L5.277 9.708H5.22L3.875 5.001H2.5zm6.387-5.999H8.5V11h1.173V8.763h1.064L11.787 11h1.327L11.91 8.583C12.455 8.373 13 7.779 13 6.9c0-1.147-.773-1.9-2.105-1.9zm-1.222 2.87V5.933h1.05c.63 0 1.05.347 1.05.989 0 .633-.408.95-1.067.95z" fill="white"/>
+          </symbol>
+    
+          <symbol id="joystick" viewBox="0 0 16 16">
+            <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2"/>
+            <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23" fill="yellow"/>
+          </symbol>
+    
+          <symbol id="keyboard" viewBox="0 0 16 16">
+            <path d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" fill="yellow"/>
+            <path d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25z" fill="yellow"/>
+          </symbol>
+    
+          <symbol id="monitor" viewBox="0 0 16 16">
+            <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" fill="white"/>
+          </symbol>
+          
+         <symbol id="network" viewBox="0 0 16 16">
+            <path d="M5.525 3.025a3.5 3.5 0 0 1 4.95 0 .5.5 0 1 0 .707-.707 4.5 4.5 0 0 0-6.364 0 .5.5 0 0 0 .707.707" fill="white"/>
+            <path d="M6.94 4.44a1.5 1.5 0 0 1 2.12 0 .5.5 0 0 0 .708-.708 2.5 2.5 0 0 0-3.536 0 .5.5 0 0 0 .707.707ZM2.5 11a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m4.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m1.5-.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0" fill="white"/>
+            <path d="M2.974 2.342a.5.5 0 1 0-.948.316L3.806 8H1.5A1.5 1.5 0 0 0 0 9.5v2A1.5 1.5 0 0 0 1.5 13H2a.5.5 0 0 0 .5.5h2A.5.5 0 0 0 5 13h6a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5h.5a1.5 1.5 0 0 0 1.5-1.5v-2A1.5 1.5 0 0 0 14.5 8h-2.306l1.78-5.342a.5.5 0 1 0-.948-.316L11.14 8H4.86zM14.5 9a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5z"fill="white"/>
+            <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" fill="white"/>
+          </symbol>
+    </svg>
+    <main>
+      <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">HARDWARE'S</h2>
+        <p>Welcome to Raven Gaming Cafe, where gaming meets excellence! We take pride in offering top-notch gaming hardware to enhance your gaming experience. Our carefully curated selection of cutting-edge equipment ensures that every gamer can enjoy the latest titles in ultimate comfort and style.</p>
+        <div class="row row-cols-1 row-cols-sm-2 g-4 py-5">
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Gaming PCs: Unleash Your Power</h3>
+                <p>Experience the true power of gaming with our high-performance gaming PCs. Equipped with the latest processors, powerful graphics cards, and ample RAM, our gaming rigs deliver seamless gameplay for even the most demanding titles. Immerse yourself in the virtual world with stunning graphics and responsive performance.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#monitor"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Monitors: Crystal Clear Precision</h3>
+                <p>At Raven Gaming Cafe, we understand the importance of crystal-clear visuals. Our gaming monitors boast high refresh rates and low response times, providing a lag-free and immersive gaming experience. Whether you're into fast-paced shooters or expansive RPGs, our monitors bring every detail to life.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#keyboard"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Gaming Peripherals: Precision in Every Move</h3>
+                <p>Your peripherals matter, and we've got you covered. From mechanical keyboards to precision gaming mouse, our peripherals are designed for gamers by gamers. Enjoy tactile feedback, customizable RGB lighting, and ergonomic designs that enhance your control and comfort during extended gaming sessions.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#vr"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Virtual Reality (VR): Step into Another Dimension</h3>
+                <p>Take gaming to the next level with our VR setups. Immerse yourself in a virtual world where you can interact with the environment and experience games like never before. Our VR systems are perfect for those looking to explore new realms and enjoy a truly immersive gaming adventure.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#joystick"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Comfortable Gaming Stations: Your Personal Haven</h3>
+                <p>Our gaming stations are designed with your comfort in mind. Enjoy spacious setups, ergonomic chairs, and ambient lighting that creates the perfect gaming atmosphere. Each station is equipped with all the necessary cables and accessories, so you can focus on the game without any distractions.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#network"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Network Infrastructure: Lag-Free Gaming</h3>
+                <p>Say goodbye to lag and interruptions. Raven Gaming Cafe boasts a robust network infrastructure to ensure a seamless online gaming experience. Our high-speed internet connection and dedicated servers provide low latency and high reliability, so you can stay competitive in your favorite multiplayer games.</p>
+              </div>
+            </div>
+          </div>
+        </main>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    
+        </body>
+    
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61554651464736" target="_blank"><img src= "image/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/raven_gaming_2023/" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@RavenGamingCafe" target="_blank"><img src="image/youtube.png" alt="YouTube"></a>
+        </div>
+        <p>&copy; 2023 Raven Gaming</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
