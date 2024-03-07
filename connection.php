@@ -1,7 +1,7 @@
 <?php
 $server = 'localhost';
 $username = 'root';
-$password = '';
+$password = 'test@123';
 $database = 'rgc_db';
 
 if (isset($_POST))
