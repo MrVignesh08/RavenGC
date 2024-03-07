@@ -8,9 +8,87 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
 
     <!--=============== CSS ===============-->
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="my-slider.css">
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  
+        .b-example-divider {
+          width: 100%;
+          height: 3rem;
+          background-color: rgba(0, 0, 0, .1);
+          border: solid rgba(0, 0, 0, .15);
+          border-width: 1px 0;
+          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+  
+        .b-example-vr {
+          flex-shrink: 0;
+          width: 1.5rem;
+          height: 100vh;
+        }
+  
+        .bi {
+          vertical-align: -.125em;
+          fill: currentColor;
+        }
+  
+        .nav-scroller {
+          position: relative;
+          z-index: 2;
+          height: 2.75rem;
+          overflow-y: hidden;
+        }
+  
+        .nav-scroller .nav {
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          overflow-x: auto;
+          text-align: center;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+  
+        .btn-bd-primary {
+          --bd-violet-bg: #712cf9;
+          --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  
+          --bs-btn-font-weight: 600;
+          --bs-btn-color: var(--bs-white);
+          --bs-btn-bg: var(--bd-violet-bg);
+          --bs-btn-border-color: var(--bd-violet-bg);
+          --bs-btn-hover-color: var(--bs-white);
+          --bs-btn-hover-bg: #6528e0;
+          --bs-btn-hover-border-color: #6528e0;
+          --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+          --bs-btn-active-color: var(--bs-btn-hover-color);
+          --bs-btn-active-bg: #5a23c8;
+          --bs-btn-active-border-color: #5a23c8;
+        }
+  
+        .bd-mode-toggle {
+          z-index: 1500;
+        }
+  
+        .bd-mode-toggle .dropdown-menu .active .bi {
+          display: block !important;
+        }
+      </style>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="hardware.css">
+    <link rel="stylesheet" href="features.css">
 
     <title>Raven Gaming Website</title>
 </head>
@@ -29,12 +107,15 @@
             </div>
             
             <!--=============== NAV MENU ===============-->
+                        
+            <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link">Home</a></li>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li><a href="index.html" class="nav__link">Home</a></li>
-
                     <li><a href="about.html" class="nav__link">About</a></li>
+
                     <!--=============== DROPDOWN 1 ===============-->
                     <li class="dropdown__item">
                         <div class="nav__link">
@@ -113,42 +194,89 @@
         </nav>
     </header>
 
-    <section class="home">
-        <div class="content">
-            <h2>About Us</h2>
-           <br><h3>Welcome to Raven Gaming Cafe</h3>
-           <p>At Raven Gaming Cafe, we believe that gaming is not just a hobby, but a lifestyle that brings people together, fosters friendships, and creates unforgettable experiences. Established with a passion for gaming, we have created a haven for gamers of all levels and interests.</p>
-        </div>
-     </section>
-
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="cpu" viewBox="0 0 24 24">
+            <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z" fill="cyan"/>
+          </symbol>
+    
+          <symbol id="vr" viewBox="0 0 24 24">
+            <path d="M7.04813 13.4061L10.5831 16.9421L9.1703 18.3558L10.5849 19.7711L9.17064 21.1853L6.69614 18.71L3.86734 21.5388L2.45312 20.1246L5.28192 17.2958L2.80668 14.8213L4.22089 13.4071L5.63477 14.8202L7.04813 13.4061ZM2.99907 3L6.54506 3.00335L18.3624 14.8207L19.7772 13.4071L21.1915 14.8213L18.7166 17.2962L21.545 20.1246L20.1308 21.5388L17.3024 18.7104L14.8275 21.1853L13.4133 19.7711L14.8269 18.3562L3.00181 6.53118L2.99907 3ZM17.4563 3.0001L20.9991 3.00335L21.001 6.52648L16.9481 10.5781L13.4121 7.0431L17.4563 3.0001Z" fill="cyan"/>
+          </symbol>
+    
+          <symbol id="joystick" viewBox="0 0 24 24">
+            <path d="M17 4C20.3137 4 23 6.68629 23 10V14C23 17.3137 20.3137 20 17 20H7C3.68629 20 1 17.3137 1 14V10C1 6.68629 3.68629 4 7 4H17ZM10 9H8V11H6V13H7.999L8 15H10L9.999 13H12V11H10V9ZM18 13H16V15H18V13ZM16 9H14V11H16V9Z" fill="cyan"/>
+          </symbol>
+    
+          <symbol id="keyboard" viewBox="0 0 24 24">
+            <path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM17.3628 15.2332C20.4482 16.0217 22.7679 18.7235 22.9836 22H20C20 19.3902 19.0002 17.0139 17.3628 15.2332ZM15.3401 12.9569C16.9728 11.4922 18 9.36607 18 7C18 5.58266 17.6314 4.25141 16.9849 3.09687C19.2753 3.55397 21 5.57465 21 8C21 10.7625 18.7625 13 16 13C15.7763 13 15.556 12.9853 15.3401 12.9569Z"fill="cyan"/>
+          </symbol>
+    
+          <symbol id="monitor" viewBox="0 0 24 24">
+            <path d="M21 13V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V13H2V11L3 6H21L22 11V13H21ZM5 13V19H19V13H5ZM4.03961 11H19.9604L19.3604 8H4.63961L4.03961 11ZM6 14H14V17H6V14ZM3 3H21V5H3V3Z" fill="cyan"/>
+          </symbol>
+          
+         <symbol id="network" viewBox="0 0 24 24">
+          <path d="M22 4C21.4477 4 21 4.44772 21 5V10.6665L11.7774 4.51806C11.6952 4.4633 11.5987 4.43408 11.5 4.43408C11.2239 4.43408 11 4.65794 11 4.93408V10.6665L1.77735 4.51806C1.69522 4.4633 1.59871 4.43408 1.5 4.43408C1.22386 4.43408 1 4.65794 1 4.93408V19.0656C1 19.1643 1.02922 19.2608 1.08397 19.3429C1.23715 19.5727 1.54759 19.6348 1.77735 19.4816L11 13.3332V19.0656C11 19.1643 11.0292 19.2608 11.084 19.3429C11.2372 19.5727 11.5476 19.6348 11.7774 19.4816L21 13.3332V19C21 19.5523 21.4477 20 22 20C22.5523 20 23 19.5523 23 19V5C23 4.44772 22.5523 4 22 4Z" fill="cyan"/>
+          </symbol>
+    </svg>
     <main>
-        <div class="home-section">
-                <br><i class="ri-honour-line"></i> Our Story:
-                <br>Raven Gaming Cafe was born out of a shared love for gaming and the desire to build a community around it. Founded in [year], we envisioned a space where gamers could come together, connect, and immerse themselves in the world of gaming. Whether you're a casual player or a hardcore enthusiast, Raven Gaming Cafe welcomes you to a space where the gaming spirit thrives.</br>
-                
-                <br><i class="ri-gamepad-line"></i> Our Space:
-                <br>Step into our state-of-the-art gaming facility, where cutting-edge technology meets a comfortable and inviting atmosphere. Equipped with high-performance gaming PCs, the latest gaming consoles, and a wide array of games, Raven Gaming Cafe is designed to provide an unparalleled gaming experience. Our ergonomic gaming chairs and ambient lighting create the perfect setting for extended gaming sessions.</br>
-                
-                <br><i class="ri-game-fill"></i> Diverse Gaming Library:
-                <br>Choose from our extensive library of games spanning various genres and platforms. From action-packed shooters to immersive RPGs, we have something for everyone. Don't have a favorite game? Our knowledgeable staff is always ready to recommend the latest releases or help you discover hidden gems.</br>
-                
-                <br><i class="ri-skull-2-fill"></i> Events and Tournaments:
-                <br>Get ready to level up your gaming experience with our regular events and tournaments. Whether you're looking to compete against fellow gamers or simply want to enjoy a themed gaming night, Raven Gaming Cafe hosts events that cater to all interests and skill levels. Stay tuned for announcements on our upcoming gaming extravaganzas!</br>
-                
-                <br><i class="ri-team-fill"></i> Community First:
-                <br>More than just a gaming cafe, Raven is a community hub where friendships are forged over shared victories and defeats. Join our Discord community, participate in gaming leagues, and connect with like-minded individuals who share your passion for gaming.</br>
-                
-                <br><i class="ri-rocket-2-fill"></i> Future Endeavors:
-                <br>As we continue to evolve, Raven Gaming Cafe is committed to staying at the forefront of the gaming world. We have exciting plans for the future, including expanding our gaming arsenal, hosting larger tournaments, and collaborating with gaming influencers to bring you exclusive experiences.</br>
-                
-                <br>Thank you for being part of the Raven Gaming Cafe community. Whether you're a regular visitor or a first-time guest, we look forward to providing you with an exceptional gaming experience that keeps you coming back for more.</br>
+      <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">About Us</h2>
+        <p>Welcome to Raven Gaming Cafe, At Raven Gaming Cafe, we believe that gaming is not just a hobby, but a lifestyle that brings people together, fosters friendships, and creates unforgettable experiences. Established with a passion for gaming, we have created a haven for gamers of all levels and interests.</p>
+        <div class="row row-cols-1 row-cols-sm-2 g-4 py-5">
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis;" style="color: #fff;"> Our Story:</h3>
+                <p style="text-align: justify; color: lightseagreen;">Raven Gaming Cafe was born out of a shared love for gaming and the desire to build a community around it. Founded in 2024, we envisioned a space where gamers could come together, connect, and immerse themselves in the world of gaming. Whether you're a casual player or a hardcore enthusiast, Raven Gaming Cafe welcomes you to a space where the gaming spirit thrives.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#monitor"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis;" style="color: #fff;"> Our Space:</h3>
+                <p style="text-align: justify; color: lightseagreen;">Step into our state-of-the-art gaming facility, where cutting-edge technology meets a comfortable and inviting atmosphere. Equipped with high-performance gaming PCs, the latest gaming consoles, and a wide array of games, Raven Gaming Cafe is designed to provide an unparalleled gaming experience. Our ergonomic gaming chairs and ambient lighting create the perfect setting for extended gaming sessions.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#joystick"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis;" style="color: #fff;"> Diverse Gaming Library:</h3>
+                <p style="text-align: justify; color: lightseagreen;">Choose from our extensive library of games spanning various genres and platforms. From action-packed shooters to immersive RPGs, we have something for everyone. Don't have a favorite game? Our knowledgeable staff is always ready to recommend the latest releases or help you discover hidden gems.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#vr"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis;" style="color: #fff;"> Events and Tournaments:</h3>
+                <p style="text-align: justify; color: lightseagreen;">Get ready to level up your gaming experience with our regular events and tournaments. Whether you're looking to compete against fellow gamers or simply want to enjoy a themed gaming night, Raven Gaming Cafe hosts events that cater to all interests and skill levels. Stay tuned for announcements on our upcoming gaming extravaganzas!</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#keyboard"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis;" style="color: #fff;"> Community First:</h3>
+                <p style="text-align: justify; color: lightseagreen;">More than just a gaming cafe, Raven is a community hub where friendships are forged over shared victories and defeats. Join our Discord community, participate in gaming leagues, and connect with like-minded individuals who share your passion for gaming.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#network"/></svg>
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis;" style="color: #fff;"> Future Endeavors:</h3>
+                <p style="text-align: justify; color: lightseagreen;">As we continue to evolve, Raven Gaming Cafe is committed to staying at the forefront of the gaming world. We have exciting plans for the future, including expanding our gaming arsenal, hosting larger tournaments, and collaborating with gaming influencers to bring you exclusive experiences.</p>
+              </div>
+            </div>
+            Thank you for being part of the Raven Gaming Cafe community. Whether you're a regular visitor or a first-time guest, we look forward to providing you with an exceptional gaming experience that keeps you coming back for more.<br>
                 
                 <br>Game on!</br>
-                
-                <br>VigneshKumar
-                <br>Founder, Raven Gaming Cafe</br></p>
-        </div>
-    </main>
+                <br> S.M.Vignesh Kumar
+                <br>Founder Of The Raven Gaming Cafe</br></p>
+          </div>
+        </main>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    
+        </body>
+    
 
     <footer>
         <div class="footer-links">
@@ -162,7 +290,7 @@
         </div>
         <p>&copy; 2023 Raven Gaming</p>
     </footer>
-    <script src="my-slider.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
