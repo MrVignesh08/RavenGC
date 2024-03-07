@@ -2,7 +2,7 @@
 $server = 'localhost';
 $username = 'root';
 $password = 'test@123';
-$database = 'rgc_db';
+$database = 'login_register_db';
 
 if (isset($_POST))
 
