@@ -34,7 +34,7 @@
 
                   
 
-                  <form class="mx-1 mx-md-4" action="add.php" method="post">
+                  <form class="mx-1 mx-md-4" action="add.php" method="post" onsubmit="return handleFormSubmission();">
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
@@ -82,6 +82,14 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+
+<script>
+    function handleFormSubmission() {
+      window.location.href = 'index.htmlg';
+      return false;
+    }
+  </script>
+
 </body>
 
 </html>
