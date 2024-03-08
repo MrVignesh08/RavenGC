@@ -85,7 +85,7 @@
 
 <script>
     function handleFormSubmission() {
-      window.location.href = 'index.htmlg';
+      window.location.href = 'index.html';
       return false;
     }
   </script>
