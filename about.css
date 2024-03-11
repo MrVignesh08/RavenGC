@@ -322,17 +322,10 @@ header {
     pointer-events: initial;
     transition: top .3s;
   }
+  
 }
 
-.home{
-  min-height: 70vh;
-  background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(image/home-bg.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .home .content{
   text-align: center;
@@ -348,8 +341,6 @@ header {
 .home .content p{
   font: size 20px;;
   color:#fff;
-  padding:1rem 0;
-  line-height: 1.5;
 }
 
 /* Paragraph Styling */
@@ -375,21 +366,7 @@ h2 {
 .home-section p{
   font: size 20px;;
   color:#fff;
-  padding:1rem 0;
-  line-height: 1.5;
   text-transform: uppercase;
-}
-
-.featurette-divider {
-  margin: 5rem 0;
-}
-
-.featurette-heading {
-  letter-spacing: -.05rem;
-}
-
-.featurette .col-md-5 {
-  margin-bottom: 40px;
 }
   
 /* Footer Styles */

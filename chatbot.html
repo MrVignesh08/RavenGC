@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Raven Gaming Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/> 
+</head>
+  <body>
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <a href="index.html" class="nav__logo">
+        <img src="image/logo.png" class="logo-image" alt="Raven Gaming Logo">
+    </a>
+    <nav class="nav container">
+        <div class="nav__data">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__burger"></i>
+                <i class="ri-close-line nav__close"></i>
+            </div>
+        </div>
+        
+        <!--=============== NAV MENU ===============-->
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+
+                <li><a href="about.html" class="nav__link">About</a></li>
+
+                <li><a href="chatbot.html" class="nav__link">Chatbot</a></li>
+                <!--=============== DROPDOWN 1 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Features <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="hardware.html" class="dropdown__link">
+                                <i class="ri-gamepad-line"></i> Hardware
+                            </a>                          
+                        </li>
+
+                        <li>
+                            <a href="food menu.html" class="dropdown__link">
+                                <i class="ri-restaurant-2-line"></i> Food Menu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="game library.html" class="dropdown__link">
+                                <i class="ri-bar-chart-line"></i> Game Library
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--=============== DROPDOWN 2 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Pricings <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="pricing.html" class="dropdown__link">
+                                <i class="ri-money-rupee-circle-line"></i> Regular
+                            </a>                          
+                        </li>
+
+                        <li>
+                            <a href="membership.html" class="dropdown__link">
+                                <i class="ri-vip-crown-line"></i> Membership
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+              
+                <!--=============== DROPDOWN 4 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Reviews <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="blog.html" class="dropdown__link">
+                                <i class="ri-draft-line"></i> Blog
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="review.html" class="dropdown__link">
+                                <i class="ri-speak-line"></i> Review
+                            </a>                          
+                        </li>
+                    </ul>
+                </li>
+              
+                <li><a href="index.php" class="nav__link">LogOut</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+  <div class="card">
+    <div id="header">
+      <h1>Raven Bot</h1>
+    </div>
+    <div id="message-section">
+      <div class="message" id="bot"><span id="bot-response">Ask anything if you needed help.</span></div>
+    </div>
+    <div id="input-section">
+      <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus"/>
+      <button class="send" onclick="sendMessage()">
+        <div class="circle"><i class="zmdi zmdi-mail-send"></i></div>
+      </button>
+    </div>
+  </div>
+  <script src="chatbot.js"></script>
+</body>
+
+<footer>
+    <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=61554651464736" target="_blank"><img src= "image/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/raven_gaming_2023/" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com/@RavenGamingCafe" target="_blank"><img src="image/youtube.png" alt="YouTube"></a>
+    </div>
+    <p>&copy; 2023 Raven Gaming</p>
+</footer>
+</html>
