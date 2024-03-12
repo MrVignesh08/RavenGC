@@ -346,9 +346,7 @@ header {
     background: #fff64f;
     padding: 0vw;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
   }
   body .card #header h1 {
     color: #000;
@@ -461,7 +459,7 @@ footer {
     color: #fff64f;
     text-align: center;
     padding: 10px;
-    position: flex;
+    position:flex;
     bottom: 0;
     width: 100%;
   }
