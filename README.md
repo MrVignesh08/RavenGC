@@ -1,15 +1,15 @@
-## RAVEN GAMING CAFE WEB APPLICATION
+# RAVEN GAMING CAFE WEB APPLICATION
 
-## ABSTRACT:
+# ABSTRACT:
 The Raven Gaming Cafe project represents a comprehensive integration of HTML, CSS, JavaScript, PHP, and SQL to establish an immersive and user-friendly gaming environment. HTML serves as the backbone, structuring the website and providing a foundation for seamless navigation. CSS steps in to enhance visual aesthetics, ensuring a consistent and responsive design across various devices. JavaScript brings dynamism to the user interface, introducing interactive elements and real-time updates, thereby elevating the overall gaming experience. 
 
-## INTRODUCTION:
+# INTRODUCTION:
 The Raven Gaming Cafe stands as a testament to the convergence of technology and recreation, offering a unique space where gaming enthusiasts can come together to indulge in their passion. This innovative project was meticulously crafted using a combination of HTML, CSS, JavaScript, PHP, and SQL, with the overarching goal of creating a dynamic and immersive gaming experience. As the digital age continues to redefine our leisure activities, the Raven Gaming Cafe emerges as a beacon for those seeking not just gaming but a sense of community and shared experiences. 
 
-## LITERATURE REVIEW:
+# LITERATURE REVIEW:
 Gaming cafes have emerged as unique spaces that blend social interaction with the immersive experience of video gaming. In the realm of digital entertainment, these establishments have gained popularity as community hubs where gamers can come together to share experiences, engage in multiplayer games, and foster a sense of camaraderie.Previous studies on the impact of gaming cafes, highlight the social and psychological benefits of these spaces. The sense of community fostered in gaming cafes contributes to increased well-being and a sense of belonging among participants.
 
-## SYSTEM REQUIREMENT:
+# SYSTEM REQUIREMENT:
 
 Front-End:HTML,CSS,JavaScript
 
@@ -37,9 +37,9 @@ System type: 64-bit operating system, x64-based processor.
 
 
 
-## System Architecture:
+# System Architecture:
 
-Client-Side (Front-end):
+## Client-Side (Front-end):
 
 HTML (Hyper-Text Markup Language):
 Responsible for creating the structure of the login and signup pages.
@@ -51,7 +51,7 @@ JavaScript:
 Implements client-side validation and dynamic interactions, enhancing the user
 experience.
 
-Server-Side (Back-end):
+## Server-Side (Back-end):
 
 Programming Language (PHP):
 Manages server-side scripting for processing login and sign-up requests.
@@ -59,9 +59,9 @@ Manages server-side scripting for processing login and sign-up requests.
 Database (SQL Database):
 Stores user account information securely, including usernames, hashed passwords, and other relevant details.
 
-Login Process:
+## Login Process:
 
-Client-Side:
+## Client-Side:
 
 • User inputs credentials (username and password).
 
