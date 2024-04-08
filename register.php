@@ -34,7 +34,7 @@
 
                   
 
-                  <form class="mx-1 mx-md-4" action="add.php" method="post" onsubmit="return handleFormSubmission();">
+                  <form class="mx-1 mx-md-4" action="add.php" method="post">
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
