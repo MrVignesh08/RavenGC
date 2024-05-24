@@ -1,9 +1,13 @@
 # RAVEN GAMING CAFE WEB APPLICATION
 
-#TEAM MEMBERS
+# TEAM MEMBERS
+
 1.Andrew-(Created forntend of this project)
+
 2.VigneshKumar-(Created backend & Database of this project)
+
 3.Praveen-(created AI bot for this project)
+
 4.Kishore-(Deployed this project and worked in azure portal)
 
 # ABSTRACT:
