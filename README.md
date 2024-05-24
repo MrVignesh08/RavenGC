@@ -1,5 +1,11 @@
 # RAVEN GAMING CAFE WEB APPLICATION
 
+#TEAM MEMBERS
+1.Andrew-(Created forntend of this project)
+2.VigneshKumar-(Created backend & Database of this project)
+3.Praveen-(created AI bot for this project)
+4.Kishore-(Deployed this project and worked in azure portal)
+
 # ABSTRACT:
 The Raven Gaming Cafe project represents a comprehensive integration of HTML, CSS, JavaScript, PHP, and SQL to establish an immersive and user-friendly gaming environment. HTML serves as the backbone, structuring the website and providing a foundation for seamless navigation. CSS steps in to enhance visual aesthetics, ensuring a consistent and responsive design across various devices. JavaScript brings dynamism to the user interface, introducing interactive elements and real-time updates, thereby elevating the overall gaming experience. 
 
