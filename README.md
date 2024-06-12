@@ -1,15 +1,5 @@
 # RAVEN GAMING CAFE WEB APPLICATION
 
-# TEAM MEMBERS
-
-1.Andrew-(Created forntend of this project)
-
-2.VigneshKumar-(Created backend & Database of this project)
-
-3.Praveen-(created AI bot for this project)
-
-4.Kishore-(Deployed this project and worked in azure portal)
-
 # ABSTRACT:
 The Raven Gaming Cafe project represents a comprehensive integration of HTML, CSS, JavaScript, PHP, and SQL to establish an immersive and user-friendly gaming environment. HTML serves as the backbone, structuring the website and providing a foundation for seamless navigation. CSS steps in to enhance visual aesthetics, ensuring a consistent and responsive design across various devices. JavaScript brings dynamism to the user interface, introducing interactive elements and real-time updates, thereby elevating the overall gaming experience. 
 
@@ -44,7 +34,6 @@ Name of Processor: AMD Ryzen 5 5500U with Radeon Graphics 2.10 GHz.
 Installed RAM: 4.00 GB.
 
 System type: 64-bit operating system, x64-based processor.
-
 
 
 # System Architecture:
@@ -133,8 +122,6 @@ Stores user account information securely, including usernames, hashed passwords,
 ![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/26db4501-4878-42ee-ae0b-5c82389f5d4e)
 
 ![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/0b02cd74-52b9-43f0-93b9-493f4c0c3cdd)
-
-![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/4ec3fe69-01ce-4c08-912d-18a61d2dcf77)
 
 ![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/28984828-a939-40d6-be2a-4af0c56a26fd)
 
