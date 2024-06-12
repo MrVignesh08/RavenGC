@@ -126,24 +126,6 @@ Stores user account information securely, including usernames, hashed passwords,
 • Enhanced Streaming Infrastructure:
 
 ## screenshort
-![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/20336b19-8597-49d5-aad9-d7ed80f6dfc6)
-
-![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/ac4b6447-2eba-4506-a856-f660db5dd1dc)
-
-![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/887d8aa3-025a-4356-9287-7d3445a809aa)
-
-![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/aab7e65d-47f1-4d87-95ce-c0d29190e6e3)
-
-![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/79ed68e0-b611-43d7-a616-62607e34cd1f)
-
-![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/1bcaae71-426a-45e9-acde-8ac27d7b87b9)
-
-![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/53b3e1ff-ceda-469d-b4f6-6e254313c742)
-
-![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/405b2a50-a0c5-4b83-9780-ab949b7e2104)
-
-![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/212c6373-10d5-48a8-8c19-d4845c3408dd)
-
 ![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/6a55082b-b45b-4443-aecb-470041082b68)
 
 ![image](https://github.com/MrVignesh08/RavenGC/assets/154654882/ea894956-91fc-4662-8f3e-5df6391b8d13)
